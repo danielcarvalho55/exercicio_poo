@@ -28,6 +28,8 @@ public class Usuario {
 	public void devolver_item(ItemBiblioteca item) {
 		if (itens_emprestados.contains(item)) {
 			item.devolver();
+			itens_emprestados.remove(item);
+			System.out.println("Item " + item.titulo + " devolvido!");
 		}
 		else System.out.println("Este usuário não está de posse desse item!");
 	}

@@ -17,5 +17,9 @@ public class ItemBiblioteca {
 	public void devolver() {
 		this.disponivel = true;
 	}
+	
+	public void detalhes() {
+		System.out.println("O título desse item é " + this.titulo);
+	}
 
 }

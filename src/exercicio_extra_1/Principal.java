@@ -87,6 +87,22 @@ public class Principal {
 		ciclano.emprestar_item(harry_potter1);
 		System.out.println(fulano.listar_itens());
 		System.out.println(ciclano.listar_itens());
+		
+		fulano.devolver_item(harry_potter1);
+		System.out.println(fulano.listar_itens());
+		System.out.println(ciclano.listar_itens());
+		
+		fulano.devolver_item(lp3);
+		System.out.println(fulano.listar_itens());
+		System.out.println(ciclano.listar_itens());
+		
+		ciclano.emprestar_item(harry_potter1);
+		System.out.println(fulano.listar_itens());
+		System.out.println(ciclano.listar_itens());
+		
+		harry_potter1.detalhes();
+		
+		lp3.detalhes();
 	}
 	
 }
